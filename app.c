@@ -90,18 +90,28 @@
 
 // take input as chracter and print them 
 
+// #include <stdio.h>
+// int main(){
+//     char name[30];
+//     printf("Enter your name : ");
+//     gets(name);
+//     printf("%s",name);
+//     return 0;
+// }
+
+
+
+// concatination of atring
+
 #include <stdio.h>
+#include<string.h>
 int main(){
-    char name[30];
-    printf("Enter your name : ");
-    gets(name);
-    printf("%s",name);
-    return 0;
+    char name1[100]="Abid";
+    char name2[20]=" Hasan";
+    strcat(name1,name2);
+    puts(name1); 
+
 }
-
-
-
-
 
 
 
