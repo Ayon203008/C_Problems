@@ -74,14 +74,66 @@
 
 // searching number in an array
 
+// #include <stdio.h>
+// int main(){
+//     int arr[5]={1,2,3,4,5};
+//     int number=4;
+//     for(int i=0;i<5;i++){
+//         if(number==arr[i]){
+//             printf("The number is find and it is %d ",arr[i]);
+//             break; // ! If you dont use break it will continue and you will not get the result
+//         }
+//     }
+// }
+
+
+
+// take input as chracter and print them 
+
 #include <stdio.h>
 int main(){
-    int arr[5]={1,2,3,4,5};
-    int number=4;
-    for(int i=0;i<5;i++){
-        if(number==arr[i]){
-            printf("The number is find and it is %d ",arr[i]);
-            break; // ! If you dont use break it will continue and you will not get the result
-        }
-    }
+    char name[30];
+    printf("Enter your name : ");
+    gets(name);
+    printf("%s",name);
+    return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
