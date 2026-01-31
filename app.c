@@ -115,20 +115,96 @@
     
 // } 
 
-
-
 // use of strcpy
 
-#include <stdio.h>
-#include <string.h>
-int main(){
-    char name1[100]="Ayon 1 Bokri";
-    char name2[20]="Ayon 2 Bokri";
-    strcpy(name1,name2);
-    puts(name1);
+// #include <stdio.h>
+// #include <string.h>
+// int main(){
+//     char name1[100]="Ayon 1 Bokri";
+//     char name2[20]="Ayon 2 Bokri";
+//     strcpy(name1,name2);
+//     puts(name1); 
+// } 
 
+
+
+// #include <stdio.h>
+// void greeting(){
+//     printf("jibin manei bedone");
+// }
+
+// int main(){
+//     greeting();
+
+// }
+
+
+// find factorial of a number using function
+
+// #include <stdio.h>
+
+// int factorial(int n){
+//     int fact=1;
+//     for(int i=1;i<=n;i++){
+//         fact=fact*i;
+//     }
+//     return fact;
+// }
+
+// int main(){
+//     printf("%d",factorial(5));
+// }
+
+
+
+// #include <stdio.h>
+
+// void bonus(float input_bonus){
+//     float total;
+//     total=input_bonus+500;
+//     printf("Salary after bonus %f \n",total);
+// }
+
+// int main(){
+//     float salary;
+//     for(int i=1;i<=5;i++){
+//         printf("Enter salary %d : ",i);
+//         scanf("%f",&salary);
+//         bonus(salary);
+//     }
     
-} 
+//     return 0;
+
+
+// }
+
+
+
+
+#include <stdio.h>
+
+void salaryBonus(int input){
+    int total;
+    total=input+5;
+    printf("Total salary after bonus %d",total);
+}
+int main(){
+    int salary;
+    for(int i=1;i<=5;i++){
+        printf("Enter salary %d",i);
+        scanf("%d",&salary);
+        salaryBonus(salary);
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
 
 
 
