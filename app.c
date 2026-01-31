@@ -86,7 +86,6 @@
 //     return 0;
 // }
 
-
 // concatination of string
 
 // #include <stdio.h>
@@ -96,7 +95,7 @@
 //     char name2[20]=" Ayon Bokri";
 //     strcat(name1,name2);
 //     puts(name1);
-// } 
+// }
 
 // comparison of srting
 
@@ -112,8 +111,8 @@
 //     else{
 //         printf("They are not same");
 //     }
-    
-// } 
+
+// }
 
 // use of strcpy
 
@@ -123,10 +122,8 @@
 //     char name1[100]="Ayon 1 Bokri";
 //     char name2[20]="Ayon 2 Bokri";
 //     strcpy(name1,name2);
-//     puts(name1); 
-// } 
-
-
+//     puts(name1);
+// }
 
 // #include <stdio.h>
 // void greeting(){
@@ -137,7 +134,6 @@
 //     greeting();
 
 // }
-
 
 // find factorial of a number using function
 
@@ -155,8 +151,6 @@
 //     printf("%d",factorial(5));
 // }
 
-
-
 // #include <stdio.h>
 
 // void bonus(float input_bonus){
@@ -172,72 +166,78 @@
 //         scanf("%f",&salary);
 //         bonus(salary);
 //     }
-    
+
 //     return 0;
 
+// }
+
+// #include <stdio.h>
+
+// void salaryBonus(int input){
+//     int total;
+//     total=input+5;
+//     printf("Total salary after bonus %d",total);
+// }
+// int main(){
+//     int salary;
+//     for(int i=1;i<=5;i++){
+//         printf("Enter salary %d",i);
+//         scanf("%d",&salary);
+//         salaryBonus(salary);
+//     }
+//     return 0;
+// }
+
+// for (int i=n-1;i>=0;i++){
+// write the statement here for revese an array
+//}
+
+// #include <stdio.h>
+// int sum(int n)
+// {
+//     if (n == 0)
+//     {
+//         return 0;
+//     }
+//     return (n + sum(n - 1));
+// }
+
+// int main()
+// {
+//     printf("%d",sum(5));
+// }
+
+
+// fibonacci using recursion
+
+// #include <stdio.h>
+
+// int fiboNacci(int n){
+//     if(n==1||n==2) return 1;
+//     return fiboNacci(n-1)+fiboNacci(n-2);
+// }
+
+// int main(){
 
 // }
 
 
-
-
 #include <stdio.h>
+struct student
+{
+    char name[50];
+    int roll;
+    int age;
+};
 
-void salaryBonus(int input){
-    int total;
-    total=input+5;
-    printf("Total salary after bonus %d",total);
-}
+
 int main(){
-    int salary;
-    for(int i=1;i<=5;i++){
-        printf("Enter salary %d",i);
-        scanf("%d",&salary);
-        salaryBonus(salary);
-    }
-    return 0;
+    struct student student1={"Abid Hasan",32,43};
+    printf("%s",student1.name);
+    printf("%d",student1.roll);
+    printf("%d",student1.age);
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
