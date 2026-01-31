@@ -259,25 +259,125 @@
 //     }
 // }
 
-#include <stdio.h>
-#include <string.h>
-struct data
-{
-    char student_name[100];
-    int Id;
-    struct
-    {
-        int marks;
-        int age;
-    }data2;
-};
+// #include <stdio.h>
+// #include <string.h>
+// struct data
+// {
+//     char student_name[100];
+//     int Id;
+//     struct
+//     {
+//         int marks;
+//         int age;
+//     }data2;
+// };
 
-int main()
-{
-    struct data studentData;
-    strcpy(studentData.student_name,"Abdi hasan Ayon");
-    studentData.Id=32;
-    studentData.data2.age=322432;
-    studentData.data2.marks=43;
-    printf("%d",studentData.data2.marks);
+// int main()
+// {
+//     struct data studentData;
+//     strcpy(studentData.student_name,"Abdi hasan Ayon");
+//     studentData.Id=32;
+//     studentData.data2.age=322432;
+//     studentData.data2.marks=43;
+//     printf("%d",studentData.data2.marks);
+// }
+
+// #include <stdio.h>
+
+// struct person
+// {
+//     int id;
+//     float marks;
+// };
+
+
+// int main(){
+//     struct person student1,*student;
+//     student=&student1;
+//     scanf("%d",&student->id);
+//     printf("id = %d",student->id);
+//     return 0;
+
+// }
+
+
+
+// #include <stdio.h>
+// int main(){
+//     int x=5,*ptr;
+//     ptr=&x;
+//     printf("%d\n",*ptr); // value
+//     printf("%d\n",ptr); // address
+// }
+
+
+
+// find the summation using pointer
+
+// #include <stdio.h>
+// int main(){
+//     int x=10,y=20;
+//     int *ptr1,*ptr2;
+//     ptr1=&x;
+//     ptr2=&y;
+//     int sum = *ptr1+*ptr2;
+//     printf("Total Summation is =%d",sum);
+//     return 0;
+
+// }
+
+
+// Swaping two values using pointer 
+
+// #include <stdio.h>
+
+// void swap(int *a,int *b){
+//     int temp;
+//     temp=*a;
+//     *a=*b;
+//     *b=temp;
+// }
+
+// int main(){
+//     int x=5,y=20;
+//     swap(&x,&y);
+//     printf("%d %d",x,y);
+// }
+
+
+
+// printing an array using pointer
+// #include <stdio.h>
+
+// int main(){
+//     int arr[5]={1,2,3,4,5};
+//     int *ptr;
+//     ptr=&arr[0];
+//     for(int i=0;i<5;i++){
+//         printf("%d",*ptr);
+//         ptr++;
+//     }
+//     return 0;
+
+// }
+
+
+// summation using pointer 
+
+#include <stdio.h>
+int main(){
+    int sum=0;
+    int *ptr;
+    int arr[5]={1,2,3,4,5};
+    ptr=&arr[0];
+    for(int i=0;i<5;i++){
+        sum=sum+*ptr;
+        ptr++;
+    }    
+
+    printf("Summation = %d",sum);
+
 }
+
+
+
