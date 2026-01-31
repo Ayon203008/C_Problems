@@ -207,7 +207,6 @@
 //     printf("%d",sum(5));
 // }
 
-
 // fibonacci using recursion
 
 // #include <stdio.h>
@@ -221,47 +220,64 @@
 
 // }
 
+// #include <stdio.h>
+// struct student
+// {
+//     char name[50];
+//     int roll;
+//     int age;
+// };
+// int main(){
+//     struct student student1={"Abid Hasan",32,43};
+//     printf("%s",student1.name);
+//     printf("%d",student1.roll);
+//     printf("%d",student1.age);
+// }
+
+// #include <stdio.h>
+// struct  bookInfo
+// {
+//     char book_title[50];
+//     char author_name[50];
+//     int page;
+//     float price;
+// };
+// int main(){
+//     struct bookInfo book[2];
+//     for(int i=0;i<2;i++){
+//         printf("Enter book name : ");
+//         scanf("%s",book[i].book_title) ;
+//         printf("Enter book Author name : ");
+//         scanf("%s",book[i].book_title) ;
+//         printf("Enter book total page : " );
+//         scanf("%d",&book->page);
+//     }
+//        for(int i=0;i<2;i++){
+//         printf("Book name %s\n",book->book_title);
+//         printf("Book Author %s\n",book->author_name);
+//         printf("Book page %d\n",book->page);
+//     }
+// }
 
 #include <stdio.h>
-struct student
+#include <string.h>
+struct data
 {
-    char name[50];
-    int roll;
-    int age;
+    char student_name[100];
+    int Id;
+    struct
+    {
+        int marks;
+        int age;
+    }data2;
 };
 
-
-int main(){
-    struct student student1={"Abid Hasan",32,43};
-    printf("%s",student1.name);
-    printf("%d",student1.roll);
-    printf("%d",student1.age);
-
+int main()
+{
+    struct data studentData;
+    strcpy(studentData.student_name,"Abdi hasan Ayon");
+    studentData.Id=32;
+    studentData.data2.age=322432;
+    studentData.data2.marks=43;
+    printf("%d",studentData.data2.marks);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
