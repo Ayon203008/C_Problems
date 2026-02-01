@@ -364,20 +364,66 @@
 
 // summation using pointer 
 
+// #include <stdio.h>
+// int main(){
+//     int sum=0;
+//     int *ptr;
+//     int arr[5]={1,2,3,4,5};
+//     ptr=&arr[0];
+//     for(int i=0;i<5;i++){
+//         sum=sum+*ptr;
+//         ptr++;
+//     }    
+//     printf("Summation = %d",sum);
+// }
+
+
+
+// calculate the length using pointer 
+
+// #include <stdio.h>
+// int main(){
+//     char name[40]="Abid";
+//     char *ptr;
+//     ptr=&name[0];
+//     int len=0;
+//     while (*ptr!='\0')
+//     {
+//         len++;
+//         ptr++;
+//     }
+
+//     printf("%d",len);
+    
+// }
+
+
 #include <stdio.h>
-int main(){
-    int sum=0;
-    int *ptr;
-    int arr[5]={1,2,3,4,5};
-    ptr=&arr[0];
-    for(int i=0;i<5;i++){
-        sum=sum+*ptr;
-        ptr++;
-    }    
+struct student
+{
+    int marks;
+    int age;
+};
 
-    printf("Summation = %d",sum);
+void StudentData(struct student s1[]){
+    for(int i=0;i<2;i++){
+        printf("Enter students marks :");
+        scanf("%d",&s1[i].marks);
+        printf("Enter students age :");
+        scanf("%d",&s1[i].age);
+    }
+}
 
+void PrintStudentData(struct student s1[]){
+    for(int i=0;i<2;i++){
+        printf("Student marks = %d",s1[i].marks);     
+        printf("Student age = %d",s1[i].age);
+    }
 }
 
 
-
+int main(){
+    struct student s[2];
+    StudentData(s);
+    PrintStudentData(s);
+}
